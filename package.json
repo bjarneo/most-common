@@ -10,7 +10,7 @@
     "test-watch": "npm test -- --watch",
     "precommit": "npm run format",
     "prepush": "npm test",
-    "format": "prettier --tab-width=4 --print-width=100 --single-quote --trailing-comma --write *.js"
+    "format": "prettier --tab-width=4 --print-width=100 --single-quote --trailing-comma=all --write *.js"
   },
   "repository": {
     "type": "git",
