@@ -1,0 +1,36 @@
+{
+  "name": "most-common",
+  "version": "1.0.0",
+  "description": "Get the _n_ most common elements and their counts from the most common to the least.",
+  "main": "index.js",
+  "author": "Bjarne Oeverli",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha -R spec index.test.js",
+    "test-watch": "npm test -- --watch",
+    "format": "prettier --tab-width=4 --print-width=100 --single-quote --trailing-comma --write *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bjarneo/most-common.git"
+  },
+  "homepage": "https://github.com/bjarneo/most-common",
+  "bugs": {
+    "url": "https://github.com/bjarneo/most-common/issues"
+  },
+  "keywords": [
+    "common",
+    "elements",
+    "count",
+    "array",
+    "words"
+  ],
+  "engineStrict": true,
+  "engines": {
+      "node": ">=6.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "prettier": "^0.22.0"
+  }
+}
