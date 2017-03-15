@@ -1,17 +1,4 @@
-function sortByMostCommon(aggregated) {
-    const sorted = [];
-
-    for (entry in aggregated) {
-        sorted.push({
-            entry: entry,
-            size: aggregated[entry],
-        });
-    }
-
-    sorted.sort((a, b) => a.size - b.size);
-
-    return sorted.reverse();
-}
+'use strict';
 
 function aggregate(array) {
     const aggregated = {};
@@ -31,6 +18,21 @@ function aggregate(array) {
     }
 
     return aggregated;
+}
+
+function sortByMostCommon(aggregated) {
+    const sorted = [];
+
+    for (entry in aggregated) {
+        sorted.push({
+            entry: entry,
+            size: aggregated[entry],
+        });
+    }
+
+    sorted.sort((a, b) => a.size - b.size);
+
+    return sorted.reverse();
 }
 
 module.exports = function mostCommon(input, size) {
