@@ -8,6 +8,8 @@
   "scripts": {
     "test": "mocha -R spec index.test.js",
     "test-watch": "npm test -- --watch",
+    "precommit": "npm run format",
+    "prepush": "npm test",
     "format": "prettier --tab-width=4 --print-width=100 --single-quote --trailing-comma --write *.js"
   },
   "repository": {
@@ -27,9 +29,10 @@
   ],
   "engineStrict": true,
   "engines": {
-      "node": ">=6.0.0"
+    "node": ">=6.0.0"
   },
   "devDependencies": {
+    "husky": "^0.13.2",
     "mocha": "^3.2.0",
     "prettier": "^0.22.0"
   }
