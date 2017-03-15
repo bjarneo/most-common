@@ -1,5 +1,3 @@
-'use strict';
-
 function aggregate(array) {
     const aggregated = {};
 
