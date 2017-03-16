@@ -37,7 +37,7 @@ module.exports = function mostCommon(input, size) {
     const array = typeof input === 'string' ? input.split('') : input;
 
     if (!Array.isArray(array)) {
-        throw new TypeError('Your input must me a string or an array');
+        throw new TypeError('Your input must be a string or an array');
     }
 
     const aggregated = aggregate(array);
