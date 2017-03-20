@@ -4,15 +4,15 @@ function aggregate(array) {
     let len = array.length;
 
     while (len--) {
-        const entry = array[len];
+        const token = array[len];
 
-        if (!(entry in aggregated)) {
-            aggregated[entry] = 1;
+        if (!(token in aggregated)) {
+            aggregated[token] = 1;
 
             continue;
         }
 
-        aggregated[entry] = ++aggregated[entry];
+        aggregated[token] = ++aggregated[token];
     }
 
     return aggregated;
@@ -21,10 +21,10 @@ function aggregate(array) {
 function sortByMostCommon(aggregated) {
     const sorted = [];
 
-    for (entry in aggregated) {
+    for (token in aggregated) {
         sorted.push({
-            entry: entry,
-            count: aggregated[entry],
+            token: token,
+            count: aggregated[token],
         });
     }
 

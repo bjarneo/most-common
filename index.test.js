@@ -26,15 +26,15 @@ describe('#mostCommon', () => {
     it('should get the top 3 common words from an array', () => {
         assert.deepEqual(mostCommon(words, 3), [
             {
-                entry: 'nlp',
+                token: 'nlp',
                 count: 3,
             },
             {
-                entry: 'node',
+                token: 'node',
                 count: 2,
             },
             {
-                entry: 'javascript',
+                token: 'javascript',
                 count: 1,
             },
         ]);
@@ -43,15 +43,15 @@ describe('#mostCommon', () => {
     it('should get the top 3 common characters from a string', () => {
         assert.deepEqual(mostCommon(pangram, 3), [
             {
-                entry: ' ',
+                token: ' ',
                 count: 8,
             },
             {
-                entry: 'o',
+                token: 'o',
                 count: 4,
             },
             {
-                entry: 'e',
+                token: 'e',
                 count: 3,
             },
         ]);

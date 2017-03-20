@@ -1,6 +1,6 @@
 {
   "name": "most-common",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Get the _n_ most common elements and their counts from the most common to the least.",
   "main": "index.js",
   "author": "Bjarne Oeverli",
@@ -25,6 +25,7 @@
     "elements",
     "count",
     "array",
+    "token",
     "words"
   ],
   "engineStrict": true,
@@ -35,5 +36,6 @@
     "husky": "^0.13.2",
     "mocha": "^3.2.0",
     "prettier": "^0.22.0"
-  }
+  },
+  "dependencies": {}
 }

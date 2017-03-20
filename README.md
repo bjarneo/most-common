@@ -33,13 +33,13 @@ const words = [
 console.log(mostCommon(words, 3));
 /*
 [{
-    entry: 'nlp',
+    token: 'nlp',
     count: 3
 }, {
-    entry: 'node',
+    token: 'node',
     count: 2
 }, {
-    entry: 'javascript',
+    token: 'javascript',
     count: 1
 }]
 */
@@ -49,13 +49,13 @@ const pangram = 'The quick brown fox jumps over the lazy dog';
 console.log(mostCommon(pangram, 3));
 /*
 [{
-    entry: ' ',
+    token: ' ',
     count: 8
 }, {
-    entry: 'o',
+    token: 'o',
     count: 4
 }, {
-    entry: 'e',
+    token: 'e',
     count: 3
 }]
 */
