@@ -24,16 +24,16 @@ function sortByMostCommon(aggregated) {
     for (entry in aggregated) {
         sorted.push({
             entry: entry,
-            size: aggregated[entry],
+            count: aggregated[entry],
         });
     }
 
-    sorted.sort((a, b) => a.size - b.size);
+    sorted.sort((a, b) => a.count - b.count);
 
     return sorted.reverse();
 }
 
-module.exports = function mostCommon(input, size) {
+module.exports = function mostCommon(input, count) {
     const array = typeof input === 'string' ? input.split('') : input;
 
     if (!Array.isArray(array)) {
@@ -44,8 +44,8 @@ module.exports = function mostCommon(input, size) {
 
     const common = sortByMostCommon(aggregated);
 
-    if (size) {
-        return common.slice(0, size);
+    if (count) {
+        return common.slice(0, count);
     }
 
     return common;

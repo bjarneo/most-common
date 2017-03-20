@@ -1,6 +1,6 @@
 {
   "name": "most-common",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Get the _n_ most common elements and their counts from the most common to the least.",
   "main": "index.js",
   "author": "Bjarne Oeverli",

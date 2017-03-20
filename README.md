@@ -34,13 +34,13 @@ console.log(mostCommon(words, 3));
 /*
 [{
     entry: 'nlp',
-    size: 3
+    count: 3
 }, {
     entry: 'node',
-    size: 2
+    count: 2
 }, {
     entry: 'javascript',
-    size: 1
+    count: 1
 }]
 */
 
@@ -50,13 +50,13 @@ console.log(mostCommon(pangram, 3));
 /*
 [{
     entry: ' ',
-    size: 8
+    count: 8
 }, {
     entry: 'o',
-    size: 4
+    count: 4
 }, {
     entry: 'e',
-    size: 3
+    count: 3
 }]
 */
 ```
