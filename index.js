@@ -30,9 +30,9 @@ function sortByMostCommon(aggregated) {
         });
     }
 
-    sorted.sort((a, b) => a.count - b.count);
+    sorted.sort((a, b) => b.count - a.count);
 
-    return sorted.reverse();
+    return sorted;
 }
 
 module.exports = function mostCommon(input, count) {
