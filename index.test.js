@@ -12,6 +12,8 @@ const words = [
     'node',
     'python',
     'node',
+    'nlp',
+    'node',
     'mocha',
     'nlp',
     'chai',
@@ -20,6 +22,7 @@ const words = [
     'array',
     'string',
     'nlp',
+    'javascript',
 ];
 
 describe('#mostCommon', () => {
@@ -27,15 +30,15 @@ describe('#mostCommon', () => {
         assert.deepEqual(mostCommon(words, 3), [
             {
                 token: 'nlp',
-                count: 3,
+                count: 4,
             },
             {
                 token: 'node',
-                count: 2,
+                count: 3,
             },
             {
                 token: 'javascript',
-                count: 1,
+                count: 2,
             },
         ]);
     });
