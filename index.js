@@ -1,10 +1,12 @@
 function aggregate(array) {
+    let i = -1;
+
     const aggregated = {};
 
-    let len = array.length;
+    const len = array.length;
 
-    while (len--) {
-        const token = array[len];
+    while (i++ < len) {
+        const token = array[i];
 
         if (!(token in aggregated)) {
             aggregated[token] = 1;
