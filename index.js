@@ -42,9 +42,9 @@ module.exports = function mostCommon(input, count) {
         throw new TypeError('Your input must be a string or an array');
     }
 
-    const aggregated = aggregate(array);
-
-    const common = sortByMostCommon(aggregated);
+    const common = sortByMostCommon(
+        aggregate(array)
+    );
 
     if (count) {
         return common.slice(0, count);
