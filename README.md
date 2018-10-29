@@ -59,6 +59,22 @@ console.log(mostCommon(pangram, 3));
     count: 3
 }]
 */
+
+
+// Exclude whitespace
+console.log(mostCommon(pangram, 3, { excludeWhitespace: true }));
+/*
+[{
+    token: 'o',
+    count: 4
+}, {
+    token: 'e',
+    count: 3
+}, {
+    token: 'u',
+    count: 2
+}]
+*/
 ```
 
 Tests

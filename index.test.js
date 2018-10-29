@@ -59,4 +59,21 @@ describe('#mostCommon', () => {
             },
         ]);
     });
+
+    it('should get the top 3 common characters from a string where whitespace is excluded', () => {
+        assert.deepEqual(mostCommon(pangram, 3, { excludeWhitespace: true }), [
+            {
+                token: 'o',
+                count: 4,
+            },
+            {
+                token: 'e',
+                count: 3,
+            },
+            {
+                token: 'u',
+                count: 2,
+            },
+        ]);
+    });
 });
