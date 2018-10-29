@@ -42,7 +42,7 @@ function sortByMostCommon(aggregated) {
         if (a.count > b.count) {
             return -1;
         } else if (a.count < b.count) {
-            return 1
+            return 1;
         } else {
             return 0;
         }
@@ -58,9 +58,7 @@ module.exports = function mostCommon(input, count, options = {}) {
         throw new TypeError('Your input must be a string or an array');
     }
 
-    const common = sortByMostCommon(
-        aggregate(array, options)
-    );
+    const common = sortByMostCommon(aggregate(array, options));
 
     if (count) {
         return common.slice(0, count);
