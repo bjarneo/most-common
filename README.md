@@ -1,5 +1,6 @@
 most-common
 --
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4JDQMB6MRJXQE&source=url)
 ![Travis](https://travis-ci.org/bjarneo/most-common.svg?branch=master)
 
 Get the _n_ most common elements and their counts from the most common to the least.
@@ -90,3 +91,9 @@ Contributions are appreciated.
 License
 --
 MIT-licensed. See LICENSE.
+
+Donation
+--
+If this project has been helpful in any way, and you want to treat me a cup of coffee, please donate :)
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4JDQMB6MRJXQE&source=url)
